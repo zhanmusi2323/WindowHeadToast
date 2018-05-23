@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+
+    <RelativeLayout
+        android:id="@+id/header_toast"
+        android:background="@drawable/shap_header_toast_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20sp"
+        android:paddingTop="5dp">
+
+        <RelativeLayout
+            android:id="@+id/header_toast_re"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:background="@mipmap/ic_launcher"
+                android:id="@+id/header_toast_smallimg"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/header_toast_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/header_toast_smallimg"
+                android:text="中国健康云"
+                android:textColor="#797979"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/header_toast_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/header_toast_title"
+                android:text=""
+                android:textColor="#999"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/header_toast_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_toast_re"
+            android:layout_marginTop="5dp"
+            android:text="中国健康云"
+            android:textColor="#333"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/header_toast_bigimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp" />
+
+        <TextView
+            android:id="@+id/header_toast_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_toast_name"
+            android:layout_marginTop="5dp"
+            android:textColor="#666"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
